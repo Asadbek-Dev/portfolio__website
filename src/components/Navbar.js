@@ -28,10 +28,10 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                 </ul>
+                <footer className='footer'>
+                    <p>@2021 Lorem, ipsum</p>
+                </footer>
             </nav>
-            <footer className='footer'>
-                <p>@2021 Lorem, ipsum</p>
-            </footer>
         </div>
     )
 }
