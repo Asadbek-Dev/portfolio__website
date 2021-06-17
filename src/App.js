@@ -1,4 +1,6 @@
+import { Route, Switch } from 'react-router';
 import './App.scss'
+import About from './components/About';
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 
@@ -10,7 +12,14 @@ function App() {
       </div>
       <div className='main-content'>
         <div className="content">
-          <Home/>
+          <Switch>
+            <Route path='/' exact>
+              <Home/>
+            </Route>
+            <Route path='/about' exact>
+              <About/>
+            </Route>
+          </Switch>
         </div>
       </div>
     </div>
