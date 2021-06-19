@@ -17,22 +17,16 @@ const About = () => {
         </div>
         <div className="about-info">
           <h4>
-            I am <span>Sobirov Asadbek</span>
+            I am <span>Asadbek</span>
           </h4>
-          <p className='about-text'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad vero
-            voluptatem voluptatibus itaque laudantium et labore inventore,
-            necessitatibus odit ipsam maxime non ea exercitationem perspiciatis
-            ducimus, expedita perferendis. Consectetur, esse.
-          </p>
         <div className="about-details">
             <div className="left-side">
-                <p>Full Name</p>
-                <p>Age</p>
-                <p>Nationlity</p>
-                <p>Languages</p>
-                <p>Address</p>
-                <p>Country</p>
+                <p>Full Name:</p>
+                <p>Age:</p>
+                <p>Nationlity:</p>
+                <p>Languages:</p>
+                <p>Address:</p>
+                <p>Country:</p>
             </div>
             <div className="right-side">
                 <p>Sobirov Asadbek</p>
@@ -52,7 +46,16 @@ const About = () => {
           <span>My skills</span>
         </h3>
       </div>
+      <div className="skillsContainer">
+      <Skill progress={'90%'} skill={'HTML'} width={'90%'} />
+      <Skill progress={'75%'} skill={'CSS'} width={'75%'} />
       <Skill progress={'60%'} skill={'Javascript'} width={'60%'} />
+      <Skill progress={'50%'} skill={'Bootstrap'} width={'50%'} />
+      <Skill progress={'70%'} skill={'React.js'} width={'70%'} />
+      <Skill progress={'50%'} skill={'Redux'} width={'50%'} />
+      <Skill progress={'60%'} skill={'material-ui'} width={'60%'} />
+      <Skill progress={'40%'} skill={'Firebase'} width={'40%'} />
+      </div>
     </div>
   );
 };
