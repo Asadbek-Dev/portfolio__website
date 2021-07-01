@@ -1,6 +1,8 @@
 import React from "react";
 import image from "../img/photo_2020-11-30_13-50-05.jpg";
+import ServicesSection from "./ServicesSection";
 import Skill from "./Skill";
+import design from '../img/design.svg'
 
 const About = () => {
   return (
@@ -55,6 +57,9 @@ const About = () => {
       <Skill progress={'50%'} skill={'Redux'} width={'50%'} />
       <Skill progress={'60%'} skill={'material-ui'} width={'60%'} />
       <Skill progress={'40%'} skill={'Firebase'} width={'40%'} />
+      </div>
+      <div className="services-container">
+          <ServicesSection image={design} text={'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'} title={'Web design'} />
       </div>
     </div>
   );
